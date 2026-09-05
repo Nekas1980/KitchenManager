@@ -1,0 +1,2 @@
+import { ModulePage } from "@/components/ModulePage";
+export default function Categorias(){return <ModulePage title="Categorias" description="Organização operacional dos produtos." action="Nova categoria" metrics={[["Categorias","12"],["Com produtos","10"],["Sem produtos","2"]]} columns={["Categoria","Produtos","Atualização","Estado"]} rows={[["Ingredientes","48","Hoje","Ativa"],["Bebidas","27","Ontem","Ativa"],["Pastelaria","31","02/09/2026","Ativa"]]}/>}
