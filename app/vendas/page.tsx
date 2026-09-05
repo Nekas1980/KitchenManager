@@ -1,0 +1,2 @@
+import { ModulePage } from "@/components/ModulePage";
+export default function Vendas(){return <ModulePage title="Vendas" description="Registos internos demonstrativos e análise comercial." action="Registar venda" metrics={[["Total mensal","€ 8 960,20"],["Vendas","312"],["Ticket médio","€ 28,72"]]} columns={["Venda","Cliente","Data","Itens","Total"]} rows={[["Venda #2081","Balcão","05/09/2026","4","€ 38,60"],["Venda #2080","Mesa 06","05/09/2026","6","€ 62,40"],["Venda #2079","Take-away","04/09/2026","3","€ 27,80"]]}/>}
