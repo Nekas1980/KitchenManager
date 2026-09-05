@@ -26,6 +26,13 @@ Aplicação de gestão operacional para pastelarias, cafés e pequenos restauran
 
 O protótipo inclui indicadores de valor em stock, compras, vendas e produtos com stock baixo, bem como evolução mensal, ações rápidas e atividade recente. Os valores apresentados são fictícios.
 
+### Código principal
+
+- [`app/page.tsx`](app/page.tsx) — estrutura e componentes do dashboard.
+- [`app/globals.css`](app/globals.css) — apresentação visual e responsividade.
+- [`app/layout.tsx`](app/layout.tsx) — estrutura global e metadados.
+- [`sql/views-dashboard.sql`](sql/views-dashboard.sql) — Views PostgreSQL para os indicadores.
+
 ## Módulos planeados
 
 - Dashboard
