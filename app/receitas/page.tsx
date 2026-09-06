@@ -1,0 +1,2 @@
+import { ModulePage } from "@/components/ModulePage";
+export default function Receitas(){return <ModulePage title="Receitas" description="Fichas técnicas, rendimentos e custos de produção." action="Nova receita" metrics={[["Receitas","36"],["Custo médio","€ 8,42"],["A rever","4"]]} columns={["Receita","Categoria","Rendimento","Custo total","Custo/dose"]} rows={[["Bacalhau à Brás","Refeições","12 doses","€ 38,40","€ 3,20"],["Pastel de nata","Pastelaria","24 un.","€ 10,80","€ 0,45"],["Bolo de laranja","Pastelaria","12 fatias","€ 7,92","€ 0,66"]]}/>}

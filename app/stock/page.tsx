@@ -1,0 +1,2 @@
+import { ModulePage } from "@/components/ModulePage";
+export default function Stock(){return <ModulePage title="Stock" description="Existências, mínimos e movimentos de armazém." action="Novo movimento" metrics={[["Valor em stock","€ 12 480,35"],["Stock baixo","7"],["Sem stock","2"]]} columns={["Produto","Stock atual","Stock mínimo","Valor","Estado"]} rows={[["Farinha T55","8 kg","15 kg","€ 6,88","Crítico"],["Café em grão","4 kg","6 kg","€ 56,80","Baixo"],["Água 0,5 L","42 un.","24 un.","€ 13,02","Normal"]]}/>}

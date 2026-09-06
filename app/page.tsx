@@ -1,3 +1,5 @@
+import { AppShell } from "@/components/AppShell";
+
 const metrics = [
   { label: "Valor em stock", value: "€ 12 480,35", trend: "+4,8%", tone: "green" },
   { label: "Vendas do mês", value: "€ 8 960,20", trend: "+12,4%", tone: "blue" },
@@ -21,23 +23,7 @@ const activity = [
 
 export default function Dashboard() {
   return (
-    <main className="app-shell">
-      <aside className="sidebar">
-        <div className="brand"><span>KM</span><div>KitchenManager<small>Gestão operacional</small></div></div>
-        <nav>
-          {['Dashboard', 'Produtos', 'Categorias', 'Fornecedores', 'Compras', 'Stock', 'Receitas', 'Vendas', 'Relatórios'].map((item, index) => (
-            <a className={index === 0 ? 'active' : ''} href="#" key={item}><i>{String(index + 1).padStart(2, '0')}</i>{item}</a>
-          ))}
-        </nav>
-        <div className="sidebar-note"><strong>Ambiente demo</strong><span>Dados exclusivamente fictícios</span></div>
-      </aside>
-
-      <section className="workspace">
-        <header>
-          <div><p>Visão geral</p><h1>Dashboard</h1></div>
-          <div className="profile"><span>KM</span><div>Utilizador Demo<small>Administrador</small></div></div>
-        </header>
-
+    <AppShell title="Dashboard" eyebrow="Visão geral">
         <div className="content">
           <div className="intro"><div><h2>Bom dia</h2><p>Acompanhe os indicadores principais da operação.</p></div><button>+ Registar compra</button></div>
           <div className="metrics">
@@ -69,7 +55,6 @@ export default function Dashboard() {
             {activity.map(item => <div className="activity-row" key={item[0]}><span>{item[0].charAt(0)}</span><div><strong>{item[0]}</strong><small>{item[1]}</small></div><b>{item[2]}</b><time>{item[3]}</time></div>)}
           </article>
         </div>
-      </section>
-    </main>
+    </AppShell>
   );
 }

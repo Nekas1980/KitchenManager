@@ -1,0 +1,2 @@
+import { ModulePage } from "@/components/ModulePage";
+export default function Produtos(){return <ModulePage title="Produtos" description="Catálogo de ingredientes, bebidas e produtos acabados." action="Novo produto" metrics={[["Produtos ativos","128"],["Stock baixo","7"],["Categorias","12"]]} columns={["Produto","Categoria","Unidade","Preço","Estado"]} rows={[["Farinha T55","Ingredientes","kg","€ 0,86","Stock baixo"],["Café em grão","Café","kg","€ 14,20","Ativo"],["Água 0,5 L","Bebidas","un.","€ 0,31","Ativo"]]}/>}
