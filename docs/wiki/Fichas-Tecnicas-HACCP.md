@@ -46,7 +46,9 @@ Para cada processo devem existir descrição, tempo, temperatura, equipamento e 
 `quantidade_liquida = quantidade_bruta × (1 - desperdicio_pct / 100)`
 
 ### Custo do ingrediente
-`custo_ingrediente = quantidade_liquida × custo_unitario`
+`custo_ingrediente = quantidade_bruta_retirada × custo_unitario_de_compra`
+
+O custo unitário e a quantidade têm de usar a mesma unidade (por exemplo, kg com €/kg). A quantidade líquida serve para acompanhar o rendimento; as perdas não reduzem o valor pago pela quantidade comprada.
 
 ### Custo total
 Soma do custo de todos os ingredientes.
@@ -57,8 +59,16 @@ Soma do custo de todos os ingredientes.
 ### Food cost
 `food_cost_pct = custo_por_dose / preco_venda_liquido × 100`
 
-### Margem bruta percentual
-`margem_pct = 100 - food_cost_pct`
+### Valor após ingredientes
+`percentagem_apos_ingredientes = 100 - food_cost_pct`
+
+Este valor ainda tem de cobrir mão de obra, energia, renda, comissões e outros custos; não representa lucro líquido.
+
+### Aproveitamentos
+
+Uma preparação anterior entra na nova ficha com a sua origem e custo proporcional: custo do lote original dividido pelo rendimento útil, multiplicado pela quantidade usada. O saldo remanescente conserva o custo correspondente no stock. Não lançar novamente como compra nem imputar o lote original completo ao prato que usa apenas uma parte. A ficha atual ainda não faz movimentos automáticos de stock.
+
+O [manual de custos, doses e aproveitamentos](../manual-custos-e-aproveitamentos.md) inclui instruções passo a passo e controlos de gestão.
 
 ## HACCP
 
