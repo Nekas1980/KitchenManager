@@ -7,6 +7,8 @@ O KitchenManager é uma solução de gestão operacional para pastelarias, café
 - [Arquitetura](Arquitetura.md)
 - [Modelo de dados](Modelo-de-dados.md)
 - [Dashboard](Dashboard.md)
+- [Fichas Técnicas e HACCP](Fichas-Tecnicas-HACCP.md)
+- [Manual de custos e aproveitamentos](../manual-custos-e-aproveitamentos.md)
 - [API](API.md)
 - [Roadmap](Roadmap.md)
 - [Segurança e backups](Seguranca-e-backups.md)

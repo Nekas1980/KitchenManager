@@ -9,6 +9,7 @@ Aplicação de gestão operacional para pastelarias, cafés e pequenos restauran
 - Centralizar produtos, categorias e fornecedores.
 - Registar compras, vendas internas e movimentos de stock.
 - Criar fichas técnicas e calcular custos por unidade ou dose.
+- Controlar perdas e valorizar aproveitamentos pelo custo proporcional do lote de origem.
 - Identificar stock baixo e apoiar decisões de aprovisionamento.
 - Disponibilizar dashboards e relatórios de gestão.
 
@@ -82,6 +83,8 @@ Cada cliente deverá ter uma base de dados independente. Dados reais só devem s
 ## Documentação
 
 Consulte a pasta [`docs/wiki`](docs/wiki/Home.md), preparada para publicação na Wiki do GitHub.
+
+O [manual de custos, doses e aproveitamentos](docs/manual-custos-e-aproveitamentos.md) explica o cálculo a iniciantes e a gestores experientes.
 
 ## Segurança
 

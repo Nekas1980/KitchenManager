@@ -24,7 +24,9 @@ export function calculateNetQuantity(
 }
 
 export function calculateIngredientCost(item: RecipeIngredientCost): number {
-  const quantity = item.quantityNet ?? item.quantityGross ?? 0;
+  // The unit price is based on the purchased unit, so charge the gross quantity.
+  // Net quantity is useful for yield and waste analysis, not as a lower purchase cost.
+  const quantity = item.quantityGross ?? item.quantityNet ?? 0;
   const unitCost = item.unitCost ?? 0;
 
   if (quantity < 0 || unitCost < 0) {

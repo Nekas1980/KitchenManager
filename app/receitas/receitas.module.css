@@ -45,6 +45,14 @@
 .summaryTotal span { color:#738078; font-size:12px; }
 .summaryTotal strong { font-size:25px; color:#14543d; }
 .alert { border:1px solid #f1d89f; background:#fff8e8; border-radius:10px; padding:12px; color:#74561e; font-size:12px; line-height:1.5; }
+.reuseNote { margin:0 0 14px; padding:13px 15px; border:1px solid #c5dfce; border-radius:10px; background:#f1f8f3; color:#234b36; font-size:12px; line-height:1.55; }
+.reuseNote p { margin:5px 0 0; }
+.tableHint { margin:10px 0 0; color:#738078; font-size:11px; line-height:1.5; }
+.guide { border-top:1px solid #eef1ef; padding:13px 0; font-size:13px; line-height:1.55; }
+.guide summary { cursor:pointer; font-weight:700; color:#234b36; }
+.guide ol,.guide ul { padding-left:22px; margin:10px 0 0; color:#526057; }
+.guide li+li { margin-top:7px; }
+.sideColumn button:disabled { cursor:not-allowed; opacity:.62; }
 .tabs { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:16px; }
 .tab { padding:8px 11px; border:1px solid #e4e9e5; border-radius:999px; background:white; font-size:11px; font-weight:700; }
 .tabActive { background:#e7f3eb; border-color:#b9d9c5; color:#14543d; }
